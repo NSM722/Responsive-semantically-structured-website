@@ -5,7 +5,6 @@ This project is built from watching the LinkedIn __Course of Crafting Semantic H
 The course enabled me to craft semantic, meaningful HTML
 
 ## Course description
----
 
 Structure and make web content available to more people and more programs by using built-in behaviors in HTML to reduce the amount of explicit code needed 
 
@@ -33,3 +32,5 @@ __Other semantic tags learnt but not used in this project are:__
 
 ## Extras
 Positioned elements on the page by using CSS Grid and Flexbox
+
+##### Here's the demo link [Two Trees Olive Oil Blog](https://playful-cupcake-3d8c9f.netlify.app/ "Two trees olive oil")
