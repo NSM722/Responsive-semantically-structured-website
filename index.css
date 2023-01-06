@@ -1,0 +1,342 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  color: #181818;
+  background-color: whitesmoke;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 100%;
+  width: 92%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+dl,
+dd,
+dt,
+article,
+figure,
+footer,
+p {
+  margin: 0;
+}
+
+
+/* Typography */
+h1 {
+  color: #F0FF42;
+  text-shadow: 2px 2px 7px black;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h2,
+h5 {
+  color: mintcream;
+  text-shadow: 0 0 5px black;
+}
+
+dt {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.author {
+  text-align: center;
+}
+
+.author img {
+  margin: 0 auto;
+}
+
+aside {
+  text-align: center;
+}
+
+aside ul {
+  padding: 0;
+}
+
+blockquote {
+  padding: .5em;
+}
+
+/* Utilities */
+.box {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: .5em 1em;
+}
+
+.grid-item-blog {
+  background-color: #E5D9B6;
+}
+
+.grid-item-tip {
+  background-color: #A4BE7B;
+}
+
+.grid-item-make {
+  background-color: #FFF38C;
+}
+
+.grid-item-home {
+  background-color: #B2B2B2;
+}
+
+.grid-item-dressing {
+  background-color: #5BC0F8;
+}
+
+.grid-item-acids {
+  background-color: #DBA39A;
+}
+
+.grid-item-sweet {
+  background-color: #9F73AB;
+}
+
+.grid-item-spice {
+  background-color: #A25B5B;
+}
+
+aside {
+  background-color: #00ABB3;
+  padding: 0 2em;
+}
+
+blockquote {
+  background-color: #FFC069;
+}
+
+/* Layout */
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.flex-wrapper {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* Header */
+header {
+  background-image: url('images/leigh-skomal-kMEeK6-Zu2Q-unsplash.jpg');
+  background-color: #285430;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 4em;
+  margin-bottom: .5rem;
+}
+
+/* Section Intro */
+.section-title,
+.section-body {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #402218;
+  text-shadow: none;
+}
+
+.section-body {
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  background-color: #243D25;
+  color: #DFE8CC;
+  font-size: .9rem;
+  text-align: center;
+  padding: .5em 1em;
+}
+
+.footer-links ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links ul li a {
+  font-size: 2rem;
+  padding: 0 .2em;
+}
+
+/* Media Queries */
+@media (max-width: 32em) {
+  .flex-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (min-width:33em) and (max-width: 51.5em) {
+  .wrapper {
+    display: grid;
+    margin-inline: auto;
+    grid-auto-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas:
+      "blog blog blog blog blog blog blog blog"
+      "tip tip tip tip make make make make"
+      "home home home home home dressing dressing dressing"
+      "acids acids acids spice spice spice spice spice"
+      "author author author author author sweet sweet sweet";
+  }
+
+  .grid-item-blog {
+    grid-area: blog;
+  }
+
+  .grid-item-tip {
+    grid-area: tip;
+  }
+
+  .grid-item-make {
+    grid-area: make;
+  }
+
+  .grid-item-home {
+    grid-area: home;
+  }
+
+  .grid-item-acids {
+    grid-area: acids;
+  }
+
+  .grid-item-sweet {
+    grid-area: sweet;
+  }
+
+  .grid-item-spice {
+    grid-area: spice;
+  }
+
+  .grid-item-dressing {
+    grid-area: dressing;
+  }
+
+  .author {
+    grid-area: author;
+  }
+
+}
+
+@media (min-width: 52em) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  h5 {
+    font-size: 1.7rem;
+  }
+
+  header {
+    padding: 10.5em;
+  }
+
+  .flex-wrapper {
+    align-items: center;
+  }
+
+  .wrapper {
+    margin-inline: auto;
+    grid-auto-columns: 1fr;
+    gap: 1.5rem;
+    grid-template-areas:
+      "blog blog blog blog blog blog blog blog"
+      "tip tip tip tip make make make make"
+      "home home home home home sweet sweet sweet"
+      "dressing dressing dressing spice spice spice spice spice"
+      "author author author author author acids acids acids";
+  }
+
+  .grid-item-blog {
+    grid-area: blog;
+  }
+
+  .grid-item-tip {
+    grid-area: tip;
+  }
+
+  .grid-item-make {
+    grid-area: make;
+  }
+
+  .grid-item-home {
+    grid-area: home;
+  }
+
+  .grid-item-acids {
+    grid-area: acids;
+  }
+
+  .grid-item-sweet {
+    grid-area: sweet;
+  }
+
+  .grid-item-spice {
+    grid-area: spice;
+  }
+
+  .grid-item-dressing {
+    grid-area: dressing;
+  }
+
+  .author {
+    grid-area: author;
+  }
+
+}
