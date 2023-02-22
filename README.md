@@ -1,4 +1,4 @@
-# Responsive semantically structured website
+# Artful Salads with Two Trees Olive Oil 
 
 This project is built from watching the LinkedIn __Course of Crafting Semantic HTML__ by Jen Kramer
 
