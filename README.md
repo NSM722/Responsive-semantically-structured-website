@@ -34,3 +34,16 @@ __Other semantic tags learnt but not used in this project are:__
 Positioned elements on the page by using CSS Grid and Flexbox
 
 ##### Here's the demo link [Two Trees Olive Oil Blog](https://playful-cupcake-3d8c9f.netlify.app/ "Two trees olive oil")
+
+##### Small Screen
+
+<img width="50%" alt="sm" src="https://user-images.githubusercontent.com/83452606/220663368-7646b9e3-5eb7-4fab-9718-102cbb9d33e1.png">
+
+##### Medium Screen
+
+<img width="33%" alt="md" src="https://user-images.githubusercontent.com/83452606/220663461-c1183079-bf47-49a5-ab9d-adfe990c0866.png">
+
+##### Large Screen
+
+<img width="100%" alt="lg" src="https://user-images.githubusercontent.com/83452606/220663535-f81e6384-3344-4ca2-bdef-1b3946300d14.png">
+
