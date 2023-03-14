@@ -81,6 +81,9 @@ a {
 
 .author img {
   margin: 0 auto;
+  border-radius: 4px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
 
 aside {
