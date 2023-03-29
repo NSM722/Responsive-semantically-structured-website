@@ -21,14 +21,8 @@ body {
 
 img {
   max-width: 100%;
+  object-fit: cover;
   display: block;
-}
-
-.container {
-  max-width: 100%;
-  width: 92%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 h1,
@@ -99,6 +93,13 @@ blockquote {
 }
 
 /* Utilities */
+
+.container {
+  max-width: 100%;
+  width: 92%;
+  margin: 0 auto;
+}
+
 .box {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -106,35 +107,48 @@ blockquote {
   padding: .5em 1em;
 }
 
-.grid-item-blog {
-  background-color: #E5D9B6;
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.grid-item-tip {
+.d-flex {
+  display: flex;
+  gap: 10px;
+}
+
+
+.flex-item-blog {
+  background-color: #E5D9B6;
+  text-align: center;
+}
+
+.flex-item-tip {
   background-color: #A4BE7B;
 }
 
-.grid-item-make {
+.flex-item-make {
   background-color: #FFF38C;
 }
 
-.grid-item-home {
+.flex-item-home {
   background-color: #B2B2B2;
 }
 
-.grid-item-dressing {
+.flex-item-dressing {
   background-color: #5BC0F8;
 }
 
-.grid-item-acids {
+.flex-item-acids {
   background-color: #DBA39A;
 }
 
-.grid-item-sweet {
+.flex-item-sweet {
   background-color: #9F73AB;
 }
 
-.grid-item-spice {
+.flex-item-spice {
   background-color: #c36c6c;
 }
 
@@ -148,17 +162,6 @@ blockquote {
 }
 
 /* Layout */
-.wrapper {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: 1fr;
-}
-
-.flex-wrapper {
-  margin: 2em 0;
-  display: flex;
-  flex-direction: row;
-}
 
 
 /* Header */
@@ -173,95 +176,44 @@ header {
 }
 
 /* Section Intro */
-.section-title,
-.section-body {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #402218;
-  text-shadow: none;
-}
 
-.section-body {
-  font-weight: 700;
-}
 
 /* Footer */
-.footer {
+footer {
   background-color: #243D25;
   color: #DFE8CC;
   font-size: .9rem;
-  text-align: center;
-  padding: .5em 1em;
-}
-
-.footer-links ul {
-  padding: 0;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: .5em 1em;
+  margin-top: 2em;
 }
 
-.footer-links ul li a {
+footer div {
+  flex: 1;
+}
+
+
+footer div:last-child {
+  flex:3;
+}
+
+.footer-links {
+  display: flex;
+  gap: 3em;
+}
+
+.footer-links li {
   font-size: 2rem;
-  padding: 0 .2em;
 }
 
 /* Media Queries */
 @media (max-width: 32em) {
-  .flex-wrapper {
-    flex-direction: column;
-  }
+
 }
 
 @media (min-width:33em) and (max-width: 51.5em) {
-  .wrapper {
-    display: grid;
-    margin-inline: auto;
-    grid-auto-columns: 1fr;
-    gap: 1.5rem;
-    grid-template-areas:
-      "blog blog blog blog blog blog blog blog"
-      "tip tip tip tip make make make make"
-      "home home home home home dressing dressing dressing"
-      "acids acids acids spice spice spice spice spice"
-      "author author author author author sweet sweet sweet";
-  }
-
-  .grid-item-blog {
-    grid-area: blog;
-  }
-
-  .grid-item-tip {
-    grid-area: tip;
-  }
-
-  .grid-item-make {
-    grid-area: make;
-  }
-
-  .grid-item-home {
-    grid-area: home;
-  }
-
-  .grid-item-acids {
-    grid-area: acids;
-  }
-
-  .grid-item-sweet {
-    grid-area: sweet;
-  }
-
-  .grid-item-spice {
-    grid-area: spice;
-  }
-
-  .grid-item-dressing {
-    grid-area: dressing;
-  }
-
-  .author {
-    grid-area: author;
-  }
-
+  
 }
 
 @media (min-width: 52em) {
@@ -289,57 +241,4 @@ header {
   header {
     padding: 10.5em;
   }
-
-  .flex-wrapper {
-    align-items: center;
-  }
-
-  .wrapper {
-    margin-inline: auto;
-    grid-auto-columns: 1fr;
-    gap: 1.5rem;
-    grid-template-areas:
-      "blog blog blog blog blog blog blog blog"
-      "tip tip tip tip make make make make"
-      "home home home home home sweet sweet sweet"
-      "dressing dressing dressing spice spice spice spice spice"
-      "author author author author author acids acids acids";
-  }
-
-  .grid-item-blog {
-    grid-area: blog;
-  }
-
-  .grid-item-tip {
-    grid-area: tip;
-  }
-
-  .grid-item-make {
-    grid-area: make;
-  }
-
-  .grid-item-home {
-    grid-area: home;
-  }
-
-  .grid-item-acids {
-    grid-area: acids;
-  }
-
-  .grid-item-sweet {
-    grid-area: sweet;
-  }
-
-  .grid-item-spice {
-    grid-area: spice;
-  }
-
-  .grid-item-dressing {
-    grid-area: dressing;
-  }
-
-  .author {
-    grid-area: author;
-  }
-
 }
