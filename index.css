@@ -47,7 +47,6 @@ h1 {
   color: #F0FF42;
   text-shadow: 2px 2px 7px black;
   font-size: 3rem;
-  text-align: center;
 }
 
 h2,
@@ -69,19 +68,11 @@ a {
   text-decoration: none;
 }
 
-.author {
-  text-align: center;
-}
-
 .author img {
   margin: 0 auto;
   border-radius: 4px;
   border: 3px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-}
-
-aside {
-  text-align: center;
 }
 
 aside ul {
@@ -96,7 +87,7 @@ blockquote {
 
 .container {
   max-width: 100%;
-  width: 92%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -115,13 +106,37 @@ blockquote {
 
 .d-flex {
   display: flex;
-  gap: 10px;
+  gap: 22px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-image: url('images/leigh-skomal-kMEeK6-Zu2Q-unsplash.jpg');
+  background-color: #285430;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 4em;
+  margin-bottom: .5rem;
+}
+
+/* Sections*/
+blockquote {
+  flex: 4;
+  font-size: 1.3rem;
+}
+
+.cite {
+  font-size: 1.3rem;
+  border-radius: 9px;
+}
 
 .flex-item-blog {
   background-color: #E5D9B6;
-  text-align: center;
 }
 
 .flex-item-tip {
@@ -130,6 +145,7 @@ blockquote {
 
 .flex-item-make {
   background-color: #FFF38C;
+
 }
 
 .flex-item-home {
@@ -161,21 +177,10 @@ blockquote {
   background-color: #FFC069;
 }
 
-/* Layout */
-
-
-/* Header */
-header {
-  background-image: url('images/leigh-skomal-kMEeK6-Zu2Q-unsplash.jpg');
-  background-color: #285430;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 4em;
-  margin-bottom: .5rem;
+.blog-body-2 {
+  background-color: #3f3a3a;
+  justify-content: space-around;
 }
-
-/* Section Intro */
 
 
 /* Footer */
@@ -208,13 +213,6 @@ footer div:last-child {
 }
 
 /* Media Queries */
-@media (max-width: 32em) {
-
-}
-
-@media (min-width:33em) and (max-width: 51.5em) {
-  
-}
 
 @media (min-width: 52em) {
   h1 {
