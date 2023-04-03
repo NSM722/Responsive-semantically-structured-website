@@ -41,7 +41,6 @@ p {
   margin: 0;
 }
 
-
 /* Typography */
 h1 {
   color: #F0FF42;
@@ -84,7 +83,6 @@ blockquote {
 }
 
 /* Utilities */
-
 .container {
   max-width: 100%;
   width: 95%;
@@ -198,9 +196,10 @@ footer div {
   flex: 1;
 }
 
-
 footer div:last-child {
   flex:3;
+  border-left: 1px solid #F0FF42;
+  padding-left: 10px;
 }
 
 .footer-links {
@@ -212,8 +211,12 @@ footer div:last-child {
   font-size: 2rem;
 }
 
-/* Media Queries */
+address {
+  border-right: 1px solid #F0FF42;
+  padding-right: 10px;
+}
 
+/* Media Queries */
 @media (min-width: 52em) {
   h1 {
     font-size: 5rem;
@@ -238,5 +241,47 @@ footer div:last-child {
 
   header {
     padding: 10.5em;
+  }
+}
+
+@media (max-width: 70em) {
+  .sub-wrapper {
+    display: grid;
+  }
+
+  .sub-wrapper div:last-child {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 41em) {
+  blockquote {
+    font-size: 1rem;
+  }
+
+  .cite {
+    font-size: .65rem;
+  }
+
+  .sub-wrapper div:last-child,
+  main section:last-child {
+    flex-direction: column;
+  }
+
+  footer {
+    font-size: .6rem;
+    align-items: start;
+    gap: 10px;
+  }
+
+  .footer-links {
+    font-size: .6rem;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 31.75em) {
+  footer {
+    flex-wrap: wrap;
   }
 }
